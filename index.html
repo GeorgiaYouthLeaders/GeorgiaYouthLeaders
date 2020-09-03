@@ -36,7 +36,7 @@
 		.modal {
 		  display: none; /* Hidden by default */
 		  position: fixed; /* Stay in place */
-		  z-index: 1; /* Sit on top */
+		  z-index: 1000; /* Sit on top */
 		  padding-top: 100px; /* Location of the box */
 		  left: 0;
 		  top: 0;
@@ -86,7 +86,7 @@
 	  <p>Sign up for updates!</p>
 	  <form action="https://formspree.io/mnqgkepd" method="POST">
     <input required type="email" name="email" style="border: none; padding: 10px; width: 95%;" placeholder="Your email"></input>
-    <button type="submit" style="margin-top: 10px; padding: 14px; width:50%; border: 1px solid white; background-color: #81E2C1; border-radius: 20px;">Submit</button>
+    <button type="submit" style="margin-top: 10px; padding: 14px; width:95%; border: 1px solid white; background-color: #81E2C1; border-radius: 20px;">Submit</button>
 </form>
 
   </div>
@@ -625,21 +625,6 @@
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-  modal.style.display = "block";
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
